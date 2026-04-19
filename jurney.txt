@@ -1,0 +1,69 @@
+Tables
+
+cancellations(cancellation_id, customer_id, subscription_id, cancellation_date, reason)
+
+customers (customer_id, company_name, industry, country, singup_date, sales_rep)
+
+payments (payment_id, customer_id, subscription_id, amount, payment_date, status, payment_method)
+
+subscriptions (subscription_id, customer_id, plan, mrr, start_date, end_date, status )
+
+
+
+
+First sight
+
+Total cancellations = 169 (28%)
+
+Total customers & subscriptions = 600
+
+2023 has most cancellations 2022(31) 2023(84) 2024(54)
+
+customer in years 2022(238) 2023(237) 2024(125)
+
+churn rate in year 2022(0.13) 2023(0.35) 2024(0.42)
+
+enterprise 26% churned
+
+growth 28% churned
+
+starter 28.6% churned
+
+
+Sales_rep	count
+James T.	114
+Linda W.	111
+Omar N.		128
+Priya M.	125
+Sarah K.	122
+
+
+Omar N.		128	55	43.0
+Priya M.	125	37	29.6
+James T.	114	27	23.7
+Linda W.	111	26	23.4
+Sarah K.	122	24	19.7
+
+
+
+Omar N.	Logistics	23
+Omar N.	Healthcare	22
+Omar N.	Finance	22
+Omar N.	Education	21
+Omar N.	Retail	20
+Omar N.	Manufacturing	20
+
+
+
+Omar N.		Switching to competitor	13
+Omar N.		Poor support	13
+Omar N.		Too expensive	11
+Omar N.		Not using it enough	8
+Omar N.		Business closed	6
+Omar N.		Missing features	4
+Sarah K.	Not using it enough	6
+Sarah K.	Business closed	6
+Sarah K.	Missing features	5
+Sarah K.	Poor support	3
+Sarah K.	Too expensive	2
+Sarah K.	Switching to competitor	2
