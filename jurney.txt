@@ -59,7 +59,7 @@ Omar N.		Switching to competitor	13
 Omar N.		Poor support	13
 Omar N.		Too expensive	11
 Omar N.		Not using it enough	8
-Omar N.		Business closed	6
+Omar N.		Business c	losed	6
 Omar N.		Missing features	4
 Sarah K.	Not using it enough	6
 Sarah K.	Business closed	6
@@ -67,3 +67,20 @@ Sarah K.	Missing features	5
 Sarah K.	Poor support	3
 Sarah K.	Too expensive	2
 Sarah K.	Switching to competitor	2
+
+
+
+
+Day 2
+
+Today we will find some other problems in the finflow data set, most likely the problem is Payment Failure.
+
+After running some commands i get results that is shown in the following report
+
+Our payment failure rate stands at 5.2% overall, but the data reveals the problem is concentrated in one segment. After ruling out country and payment method as causes — both showed less than 1% difference in failure rates — the issue traces directly to Enterprise plan customers, who have a 16.7% failure rate compared to just 3.6-4% for Starter and Growth plans. This has resulted in $101,336 in lost Enterprise revenue alone, out of $146,456 total lost across all plans. Given that Enterprise customers typically pay via corporate accounts with internal approval processes, the failures are likely originating on their end. I recommend FinFlow proactively reach out to Enterprise accounts with failed payments, offer dedicated billing support, and consider setting up automatic payment retry logic or direct invoicing as an alternative collection method.
+
+
+Also today, by running some SQL commands, I check the revenue pattern by month where i find overall increasing pattern but February has some opposition to overall pattern which is explained in the below paragraph
+
+Monthly revenue analysis reveals a consistent February dip across all three years — growth slowed to near zero in 2023 ($302 increase vs $9,000+ in surrounding months) and revenue actually declined by $10,353 in February 2024. This pattern repeats annually and is likely caused by February's shorter billing cycle — fewer days means some monthly subscriptions miss their payment window entirely. This is a systems issue, not a customer behavior issue. I recommend engineering implement an automatic payment retry logic that accounts for shorter months, and that billing cycles be reviewed to ensure no subscription payment windows fall outside the month.
+
